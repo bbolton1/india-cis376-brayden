@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>D&D "Adventure"</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
   <link rel="stylesheet" href="./styles/style.css">
 </head>
@@ -18,7 +17,9 @@
     <div class="row">
       <div class="col-md-6">
         <h2>About</h2>
-        <p>Dungeons & Dragons is a fantasy tabletop role-playing game (RPG) where players create characters and embark on adventures in a magical world filled with monsters, treasure, and intrigue.</p>
+        <p>Dungeons & Dragons is a fantasy tabletop role-playing game (RPG) 
+          where players create characters and embark on adventures 
+          in a magical world filled with monsters, treasure, and intrigue.</p>
       </div>
       <div class="col-md-6">
         <h2>Create Your D&D Character</h2>
@@ -53,7 +54,7 @@
               <input class="form-check-input" type="radio" name="charClass" id="classRogue" value="Rogue" required>
               <label class="form-check-label" for="classFighter">Rogue</label>
             </div>
-            <!-- Add more class options here -->
+          
           </div>
           <div class="form-group">
             <label for="charRace">Race:</label>
@@ -69,7 +70,7 @@
               <option value="Tiefling">Tiefling</option>
               <option value="Dragonborn">Dragonborn</option>
               <option value="Githyanki">Githyanki</option>
-              <option value="Other">Other</option>
+              <option value="OtherRace">Other</option>
             </select>
           </div>
           <!-- Text box for Other race -->
@@ -88,6 +89,8 @@
   </div>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
-  <button id="clear-and-add-content">Clear and Add Content</button>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js'></script>
+  <script src="./scripts/script.js"></script>
 </body>
 </html>
