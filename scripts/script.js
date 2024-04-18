@@ -1,4 +1,13 @@
 $(document).ready(function() {
+
+  $('#charRace').change(function(){
+    if($(this).val() === "Other"){
+      $('#otherRaceInput').show();
+    } else {
+      $('#otherRaceInput').hide();
+    }
+  });
+
   $('#character-form').submit(function(event) {
     event.preventDefault();
     let charName = $('#charName').val();
@@ -12,3 +21,5 @@ $(document).ready(function() {
     // You can send this data to a server or perform any other action here
   });
 });
+
+
