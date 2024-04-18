@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>D&D "Adventure"</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'><link rel="stylesheet" href="./styles/style.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
   <div class="jumbotron text-center">
@@ -13,14 +14,14 @@
     <p class="lead">How will your adventure end? Try not to get scammed!</p>
   </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <h2>About</h2>
-      <p>Dungeons & Dragons is a fantasy tabletop role-playing game (RPG) where players create characters and embark on adventures in a magical world filled with monsters, treasure, and intrigue.</p>
-    </div>
-    <div class="col-md-6">
-      <h2>Create Your D&D Character</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About</h2>
+        <p>Dungeons & Dragons is a fantasy tabletop role-playing game (RPG) where players create characters and embark on adventures in a magical world filled with monsters, treasure, and intrigue.</p>
+      </div>
+      <div class="col-md-6">
+        <h2>Create Your D&D Character</h2>
         <form id="character-form">
           <div class="form-group">
             <label for="charName">Character Name:</label>
@@ -28,13 +29,29 @@
           </div>
           <div class="form-group">
             <label for="charClass">Class:</label><br>
-            <div class="form-check form-check-inline">
+            <div class="form-check">
               <input class="form-check-input" type="radio" name="charClass" id="classFighter" value="Fighter" required>
               <label class="form-check-label" for="classFighter">Fighter</label>
             </div>
-            <div class="form-check form-check-inline">
+            <div class="form-check">
               <input class="form-check-input" type="radio" name="charClass" id="classWizard" value="Wizard">
               <label class="form-check-label" for="classWizard">Wizard</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="charClass" id="classPaladin" value="Paladin" required>
+              <label class="form-check-label" for="classFighter">Paladin</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="charClass" id="classMonk" value="Monk" required>
+              <label class="form-check-label" for="classFighter">Monk</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="charClass" id="classDruid" value="Druid" required>
+              <label class="form-check-label" for="classFighter">Druid</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="charClass" id="classRogue" value="Rogue" required>
+              <label class="form-check-label" for="classFighter">Rogue</label>
             </div>
             <!-- Add more class options here -->
           </div>
@@ -53,12 +70,12 @@
               <option value="Dragonborn">Dragonborn</option>
               <option value="Githyanki">Githyanki</option>
               <option value="Other">Other</option>
-              
-              <input type="text" class="form-control" id="charRace">
-              <label class="form-check-label" for="Other">Other</label>
-              
-              <!-- A list of all races -->
             </select>
+          </div>
+          <!-- Text box for Other race -->
+          <div class="form-group" id="otherRaceInput">
+            <label for="otherRace">Other Race:</label>
+            <input type="text" class="form-control" id="otherRace">
           </div>
           <div class="form-group">
             <label for="charBackground">Background:</label>
@@ -71,9 +88,5 @@
   </div>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js'></script>
-  <script src="./scripts/script.js"></script>
-
 </body>
 </html>
