@@ -1,0 +1,13 @@
+body {
+  background-color: lightgray;
+}
+
+.jumbotron {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+}
