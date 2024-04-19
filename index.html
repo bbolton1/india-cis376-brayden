@@ -16,7 +16,7 @@
   <div class="container" id="creationPage">
     <div class="row">
       <div class="col-md-6">
-        <h2>About</h2>
+        <h2>About</h2> <!-- gives info on what the page is about -->
         <p>Dungeons & Dragons is a fantasy tabletop role-playing game (RPG) 
           where players create characters and embark on adventures 
           in a magical world filled with monsters, treasure, and intrigue.<br>
@@ -30,11 +30,11 @@
         <h2>Create Your D&D Character</h2>
         <form id="characterForm">
           <div class="form-group">
-            <label for="charName">Character Name:</label>
+            <label for="charName">Character Name:</label> <!-- name select area -->
             <input type="text" placeholder="Name your character!" class="form-control" id="charName">
           </div>
           <br>
-          <div class="form-group">
+          <div class="form-group"> <!-- class select area -->
             <label for="charClass">Class:</label><br>
             <div class="form-check">
               <label class="form-check-label" for="classFighter">Fighter</label>
@@ -64,13 +64,11 @@
               <label class="form-check-label" for="classRanger">Ranger</label>
               <input class="form-check-input" type="radio" name="charClass" id="classRanger" value="Ranger">
             </div>
-          
             <br>
-
           </div>
-          <div class="form-group">
+          <div class="form-group"> <!-- area where character race is selected -->
             <label for="charRace">Race:</label>
-            <select class="form-control" id="charRace">
+            <select class="form-control" id="charRaceSelect">
               <option value="">Select Race</option>
               <option value="Human">Human</option>
               <option value="Elf">Elf</option>
@@ -82,7 +80,7 @@
               <option value="Tiefling">Tiefling</option>
               <option value="Dragonborn">Dragonborn</option>
               <option value="Githyanki">Githyanki</option>
-              <option value="OtherRace">Other</option>
+              <option value="Other">Other</option>
             </select>
           </div>
           <!-- Text box for Other race -->
@@ -139,7 +137,7 @@
         <br>
         <button type="submit" class="btn btn-primary">Submit Info</button>
       </form>
-    <div class="result">
+    <div class="result"> <!-- will output after putting in credit card info-->
       <h2>You got robbed and had to give up your dreams of being an adventurer. Probably shouldn't trust hooded figures in alleyways now should you?</h2>
     </div>
   </div>
