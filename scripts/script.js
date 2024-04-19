@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+  // displays the other race input box only if the user selects it
   $('#charRace').change(function(){
     if($(this).val() === "OtherRace"){
       $('#otherRaceInput').show();
@@ -7,15 +9,7 @@ $(document).ready(function() {
     }
   });
 
-  function showMenu() {
-    var x = document.getElementById("links");
-    if (x.style.display === "block") {
-      x.style.display = "none";
-    } else {
-      x.style.display = "block";
-    }
-  }
-
+  // stores the character info put in by the user
   $('#character-form').submit(function(event) {
     event.preventDefault();
     let charName = $('#charName').val();
@@ -24,11 +18,12 @@ $(document).ready(function() {
     let profession = $('#profession').val();
 
 
-  // Clear the main content area
+  // clears the main content area
   function clearMainContent() {
     $('#creationPage').empty();
   }
 
+  // displays new info on the page
   function showNewContent() {
     $('#adventurePage').show();
   }
@@ -37,13 +32,23 @@ $(document).ready(function() {
     $('body').addClass('secondBackground');
   }
 
-  // Example: Clearing content and adding new content when a button is clicked
-  $('#clearContent').click(function() {
+  // clears the page and replaces it with a new set of pictures and inputs as well as making the background black
+  $('#clearPage').click(function() {
     clearMainContent();
     showNewContent();
     makeBackgroundBlack();
+    });
   });
-});
+
+  // clears the input fields by setting their values to an empty string
+  $('#clearFields').click(function() {
+    $('#charName').val('');
+    $('input[name="charClass"]').prop('checked', false);
+    $('#charRace').val('');
+    $('#otherRace').val('');
+    $('#profession').val('');
+  });
+
 });
 
 
