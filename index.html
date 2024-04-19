@@ -31,7 +31,7 @@
         <form id="character-form">
           <div class="form-group">
             <label for="charName">Character Name:</label>
-            <input type="text" class="form-control" id="charName">
+            <input type="text" placeholder="Name your character!" class="form-control" id="charName">
           </div>
           <div class="form-group">
             <label for="charClass">Class:</label><br>
@@ -115,20 +115,24 @@
       <form id="paymentForm">
         <div class="form-group">
           <label for="fullName">Full Name:</label>
-          <input type="text" class="form-control" id="fullName" required>
+          <input type="text" placeholder="What's your name? And in case you are Elon Musk's child I let you use numbers :)" class="form-control" id="fullName" required>
         </div>
+        <br/>
         <div class="form-group">
           <label for="cardNumber">Card Number:</label>
-          <input type="number" class="form-control" id="cardNumber" required>
+          <input type="number" placeholder="Gonna need them digits. Ex. ################" class="form-control" id="cardNumber" required>
         </div>
+        <br/>
         <div class="form-group">
           <label for="expiryDate">Expiry Date:</label>
-          <input type="number" class="form-control" id="expiryDate" required>
+          <input type="number" placeholder="When does it expire???????? Ex. MMYY" class="form-control" id="expiryDate" required>
         </div>
+        <br/>
         <div class="form-group">
           <label for="cvv">CVV:</label>
-          <input type="number" class="form-control" id="cvv" required>
+          <input type="password" placeholder="Security code. Would be a shame if someone saw it! Ex. ###" class="form-control" id="cvv" required>
         </div>
+        <br/>
         <button type="submit" class="btn btn-primary">Submit Info</button>
       </form>
   </div>
