@@ -9,32 +9,9 @@
 </head>
 <body>
   <div class="jumbotron text-center">
-    <h1 class="display-4">Dungeons & Dragons Adventure! Work in Progress</h1>
+    <h1 class="display-4">Dungeons & Dragons Adventure!</h1>
     <p class="lead">How will your adventure end? Try not to get scammed!</p>
   </div>
-
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="https://github.com/bbolton1" target="_blank">BB</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- <div class="collapse navbar-collapse" id="collapsibleNavbar"> -->
-        <div class="topnav">
-          <div id="links">
-            <a class="nav-link" href="https://gist.github.com/barrycumbie/2734a9660bacf7cbcc73c65abee0a1c6" target="_blank">India Story Card</a>
-            <a class="nav-link" href="https://github.com/bbolton1/india-cis376-brayden" target="_blank">Code</a>
-            <a class="nav-link" href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fbbolton1.github.io%2Findia-cis376-brayden%2F" target="_blank">Check this page's validation</a>
-          </div>
-          <a href="javascript:void(0);" class="icon" onclick="showMenu()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-            </svg>
-          </a>
-        </div>
-      <!-- </div> -->
-    </div>
-  </nav>
 
   <div class="container" id="creationPage">
     <div class="row">
@@ -59,8 +36,8 @@
           <div class="form-group">
             <label for="charClass">Class:</label><br>
             <div class="form-check">
-              <label class="form-check-label" for = "classFighter">Fighter</label>
-              <input class="form-check-input" type = "radio" name = "charClass" id = "classFighter" value = "Fighter">
+              <label class="form-check-label" for="classFighter">Fighter</label>
+              <input class="form-check-input" type="radio" name="charClass" id="classFighter" value="Fighter">
             </div>
             <div class="form-check">
               <label class="form-check-label" for="classWizard">Wizard</label>
@@ -87,6 +64,8 @@
               <input class="form-check-input" type="radio" name="charClass" id="classRanger" value="Ranger">
             </div>
           
+            <br/>
+
           </div>
           <div class="form-group">
             <label for="charRace">Race:</label>
@@ -107,14 +86,20 @@
           </div>
           <!-- Text box for Other race -->
           <div class="form-group" id="otherRaceInput">
+            <br/>
             <label for="otherRace">Other Race:</label>
             <input type="text" class="form-control" id="otherRace">
           </div>
           <div class="form-group">
+            <br/>
             <label for="profession">Profession:</label>
             <input type="text" class="form-control" id="profession">
           </div>
-          <button type="submit" class="btn btn-primary" id="clearContent">Create Character</button>
+          <br/>
+          <button type="submit" class="btn btn-primary" id="clearPage">Create Character</button>
+          <!-- <br/>
+          <br/> -->
+          <button type="button" class="btn btn-secondary" id="clearFields">Clear Fields</button>
         </form>
       </div>
     </div>
@@ -127,37 +112,44 @@
     <h2>A strange man approaches you and asks for money. 
       You're not carrying cash, but luckily he has a device to accept credit card info, how convenient
       (especially in a world without credit cards)!</h2>
-      <form id="payment-form">
+      <form id="paymentForm">
         <div class="form-group">
           <label for="fullName">Full Name:</label>
           <input type="text" class="form-control" id="fullName" required>
         </div>
         <div class="form-group">
           <label for="cardNumber">Card Number:</label>
-          <input type="text" class="form-control" id="cardNumber" required>
+          <input type="number" class="form-control" id="cardNumber" required>
         </div>
         <div class="form-group">
           <label for="expiryDate">Expiry Date:</label>
-          <input type="text" class="form-control" id="expiryDate" required>
+          <input type="number" class="form-control" id="expiryDate" required>
         </div>
         <div class="form-group">
           <label for="cvv">CVV:</label>
-          <input type="text" class="form-control" id="cvv" required>
+          <input type="number" class="form-control" id="cvv" required>
         </div>
         <button type="submit" class="btn btn-primary">Submit Info</button>
       </form>
   </div>
 
-  <div class="mt-5 p-4 bg-dark text-white text-center">
+  <!-- footer with basic information like source code and links to various sources -->
+
+  <div class="mt-5 p-4 text-white text-center">
     <footer>
-      <p> <!-- allows ease of separation between elements-->
+      <p>
         <a href="https://www.w3schools.com/" target="_blank">w3schools</a>
         |
         <a href="https://gist.github.com/barrycumbie/de4aa0fcb0cad79a870305240d726cd0" target="_blank">cis 376 🚀 page</a>
         | 
         <a href="https://www.geeksforgeeks.org/" target="_blank">geeksforgeeks</a>
         | 
-        Brayden Bolton
+        <br/>
+        <a href="https://gist.github.com/barrycumbie/94d7c36ba2e18b02aeba969aa6078f23" target="_blank">India Story Card</a>
+        |
+        <a href="https://github.com/bbolton1/india-cis376-brayden" target="_blank">Code</a>
+        |
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbbolton1.github.io%2Findia-cis376-brayden%2F" target="_blank">HTML validator</a>
       </p>
     </footer>
   </div>
@@ -166,6 +158,6 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js'></script>
   <script src="scripts/script.js"></script>
-  <!-- <script src="scripts/hoboData.js"></script> -->
+  <script src="scripts/hoboData.js"></script> <!-- links up to the file where the default values are stored  -->
 </body>
 </html>
