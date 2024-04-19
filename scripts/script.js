@@ -16,23 +16,21 @@ $(document).ready(function() {
     let charBackground = $('#charBackground').val();
   });
     // Do something with the character data, like displaying it
-    // alert("Character Name: " + charName + "\nClass: " + charClass + "\nRace: " + charRace + "\nBackground: " + charBackground);
-    // You can send this data to a server or perform any other action here
 
     // Clear the main content area
     function clearMainContent() {
-      $('#main-content').empty();
+      $('#creationPage').empty();
     }
 
     // Example: Adding new content to the main content area
-    function addNewContent() {
-      $('#main-content').html('<h2>New Content Added</h2><p>This is some new content added dynamically.</p>');
+    function showNewContent() {
+      $('#adventurePage').show();
     }
 
     // Example: Clearing content and adding new content when a button is clicked
     $('#clearContent').click(function() {
       clearMainContent();
-      addNewContent();
+      showNewContent();
   });
 });
 
