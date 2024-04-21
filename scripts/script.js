@@ -45,6 +45,20 @@ $(document).ready(function() {
     $('#charProfession').val(defaultCharacter.characterProfession);
   });
 
+  // allows the user to hide and show the CVV (password)
+  $('#togglePassword').click(function(){
+    let cvvField = $('#cvv');
+    let fieldType = cvvField.attr('type');
+    if (fieldType === 'password') {
+      cvvField.attr('type', 'text');
+      $(this).text('Hide');
+    } 
+    else {
+      cvvField.attr('type', 'password');
+      $(this).text('Show');
+    }
+  });
+
   // stores credit card info
   $('#paymentForm').submit(function(event) {
     event.preventDefault(); 
