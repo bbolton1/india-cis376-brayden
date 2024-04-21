@@ -80,7 +80,7 @@
               <option value="Tiefling">Tiefling</option>
               <option value="Dragonborn">Dragonborn</option>
               <option value="Githyanki">Githyanki</option>
-              <option value="Other">Other</option>
+              <option value="OtherRace">Other</option>
             </select>
           </div>
           <!-- Text box for Other race -->
@@ -132,8 +132,12 @@
         <br>
         <div class="form-group">
           <label for="cvv">CVV:</label>
-          <input type="password" placeholder="Security code. Would be a shame if someone saw it! Ex. ###" class="form-control" id="cvv" required>
+            <div class="input-group">
+              <input type="password" placeholder="Security code. Would be a shame if someone saw it! Ex. ###" class="form-control pwd" id="cvv" required>
+              <button class="btn btn-outline-secondary reveal" type="button" id="togglePassword">Show</button>
+            </div>
         </div>
+      <br>
         <br>
         <button type="submit" class="btn btn-primary">Submit Info</button>
       </form>
